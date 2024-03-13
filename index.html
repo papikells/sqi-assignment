@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+</head>
+<body>
+
+   <input id="checkEligibility">
+   <button onclick="checkEligibility()">click me</button><br><br><br>
+
+
+
+   <input id="password">
+   <input id="confirmpassword">
+   <button onclick="password()">click me</button>
+
+</body>
+</html>
+<script>
+    const input = document.getElementById('checkEligibility')
+
+    function checkEligibility() {
+
+        if (input.value >= 18) {
+
+            alert( "you're eligible")
+            
+        }
+        else{
+            alert( "you're ineligible")
+        }
+       
+        
+    }
+
+
+     const  input1  = document.getElementById('password')
+     const input2 =  document.getElementById('confirmpassword')
+
+    function password() {
+        if (input1.value == input2.value) {
+
+            alert("match")
+            
+        }
+        else{
+
+            alert('does not match')
+        }
+        
+    }
+    
+
+
+
+</script>
